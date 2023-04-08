@@ -14,7 +14,7 @@ public class Drivers {
         System.out.print("Masukkan Jumlah Data Yang Akan Di Masukkan Dalam Antrian: ");
         int numElements = sc.nextInt();
 
-        System.out.println("Masukkan " + numElements + " Elemen:");
+        System.out.println("Masukkan " + numElements + " Data:");
         for (int i = 0; i < numElements; i++) {
             System.out.print("Masukkan Nama: ");
             String str = sc.next();
@@ -26,7 +26,7 @@ public class Drivers {
         }
 
         // Dequeue all elements from the queue
-        System.out.println("Dequeueing all elements:");
+        System.out.println("Mengeluarkan Data Yang Telah Di Masukkan:");
         while (!queue.isEmpty()) {
             Object[] item = (Object[]) queue.dequeue();
             String str = (String) item[0];
